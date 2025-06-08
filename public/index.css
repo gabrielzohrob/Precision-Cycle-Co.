@@ -1,0 +1,38 @@
+/* 1. Inter font globally */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 3. Make sure links look clean */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 4. Universal button style */
+.custom-button {
+  background-color: #5A6B52 !important;
+  color: white !important;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.custom-button:hover {
+  background-color: #4e5d47 !important; /* darker olive on hover */
+}   

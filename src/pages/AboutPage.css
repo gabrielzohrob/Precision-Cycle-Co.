@@ -1,0 +1,34 @@
+.about-page h1 {
+  font-weight: 700;
+}
+
+.about-page p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-main-image {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.browse_services-btn {
+  background-color: #5A6B52;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.browse_services-btn:hover {
+  background-color: #4a5945;
+}
+
+.service-card img {
+  object-fit: cover;
+  height: 220px;
+}

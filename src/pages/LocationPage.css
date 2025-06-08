@@ -1,0 +1,38 @@
+.location-heading {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.location-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.location-item {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.location-item:hover {
+  background-color: #f6f6f6;
+}
+
+.location-item.active {
+  background-color: #e7efe4;
+  border-color: #5A6B52;
+}
+
+.submission-popup {
+  background-color: #e6f4ea;
+  border: 1px solid #5A6B52;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: #2e4932;
+  font-weight: 500;
+  display: inline-block;
+}
