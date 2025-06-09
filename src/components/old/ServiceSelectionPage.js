@@ -33,7 +33,8 @@ const ServiceSelectionPage = () => {
               A subheading for this section, as long or as short as you like
             </p>
             <div className="d-flex gap-2">
-              <button className="browse_services-btn">View</button>
+              <button className="browse_services-btn"
+              onClick={() => navigate('/service-catalogue')}>View</button>
               <button
                 className="browse_services-btn"
                 style={{ backgroundColor: '#f4f4f4', color: '#333', fontWeight: 'bold' }}

@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button, Card } from 'react-bootstrap';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import './ServiceDetailsPage.css'; // Optional: style it as needed
+import './ServiceDetails.css'; // Optional: style it as needed
+import { useParams } from 'react-router-dom';
 
-const ServiceDetailsPage = ({ service = 'Brake Repair', price = 'Starting from 40$', image = '/images/brake repair.png' }) => {
+const ServiceDetails = ({ service = 'Brake Repair', price = 'Starting from 40$', image = '/images/brake repair.png' }) => {
   const [selectedDate, setSelectedDate] = useState(new Date());
+
+  const {serviceId} = useParams();
+  //console.log("The serviceId is " + serviceId);
 
   return (
     <Container className="mt-5 mb-5">
@@ -103,4 +107,4 @@ const ServiceDetailsPage = ({ service = 'Brake Repair', price = 'Starting from 4
   );
 };
 
-export default ServiceDetailsPage;
+export default ServiceDetails;

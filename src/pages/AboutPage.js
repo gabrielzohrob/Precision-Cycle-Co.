@@ -18,7 +18,7 @@ const AboutPage = () => {
       </p>
 
       <img
-        src="/images/learn more about us.png"
+        src="/images/bike-repair.jpg"
         alt="Working on a bike"
         className="about-main-image mb-4"
       />
@@ -33,56 +33,51 @@ const AboutPage = () => {
         We take pride in getting it right the first time, using quality parts and precision tools with every service.
       </p>
 
-      <h2 className="mt-5 mb-4" style={{ color: '#5A6B52' }}>
-        Our Most Popular Services
-      </h2>
-
-      <div className="d-flex justify-content-end mb-3">
-        <button className="browse_services-btn" onClick={goToServices}>
-          Bike Service Catalogue
-        </button>
-      </div>
+      <Row>
+          <Col>
+            <h2 className="mt-5 mb-3">Our Most Popular Services</h2>
+          </Col>
+  
+          <Col className="justify-content-center mt-5 mb-3">
+            <div className="d-flex justify-content-between justify-content-center align-items-center">
+              <div></div>
+              <button className="browse_services-btn" onClick={() => navigate('/service-catalogue')}>Service Catalogue</button>
+            </div>
+          </Col>
+      </Row>
 
       <Row className="mb-5">
-        <Col md={4}>
-          <Card className="mb-3 service-card">
-            <Card.Img variant="top" src="/images/flat tire.png" />
-            <Card.Body>
-              <Card.Title>Flat Tire Repair</Card.Title>
-              <Card.Text>
-                Quick, hassle-free flat fixes to get you back on the road—while you wait!
-              </Card.Text>
-              <Button className="browse_services-btn" onClick={goToServices}>Learn more</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-
-        <Col md={4}>
-          <Card className="mb-3 service-card">
-            <Card.Img variant="top" src="/images/brake repair.png" />
-            <Card.Body>
-              <Card.Title>Brake Repair</Card.Title>
-              <Card.Text>
-                Precision brake adjustments and replacements to keep you safe and in control on every ride.
-              </Card.Text>
-              <Button className="browse_services-btn" onClick={goToServices}>Learn more</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-
-        <Col md={4}>
-          <Card className="mb-3 service-card">
-            <Card.Img variant="top" src="/images/tune ups.png" />
-            <Card.Body>
-              <Card.Title>Tune-Ups</Card.Title>
-              <Card.Text>
-                Comprehensive bike tune-ups to boost performance and ensure a smoother, safer ride.
-              </Card.Text>
-              <Button className="browse_services-btn" onClick={goToServices}>Learn more</Button>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
+              <Col md={4}>
+                <Card className="mb-3 service-card">
+                  <Card.Img variant="top" src="/images/flat-tire.jpg" />
+                  <Card.Body>
+                    <Card.Title>Flat Tire Repair</Card.Title>
+                    <Card.Text>Quick, hassle-free flat fixes to get you back on the road—while you wait!</Card.Text>
+                    <Button className="browse_services-btn" onClick={() => navigate('/service/cb-tires')}>Learn More</Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col md={4}>
+                <Card className="mb-3 service-card">
+                  <Card.Img variant="top" src="/images/brake-repair.jpg" />
+                  <Card.Body>
+                    <Card.Title>Brake Repair</Card.Title>
+                    <Card.Text>Precision brake adjustments and replacements to keep you safe and in control on every ride.</Card.Text>
+                    <Button className="browse_services-btn" onClick={() => navigate('/service/cb-brakes')}>Learn More</Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+              <Col md={4}>
+                <Card className="mb-3 service-card">
+                  <Card.Img variant="top" src="/images/tire-replace.jpg" />
+                  <Card.Body>
+                    <Card.Title>Full Tune-Ups</Card.Title>
+                    <Card.Text>Comprehensive bike tune-ups to boost performance and ensure a smoother, safer ride.</Card.Text>
+                    <Button className="browse_services-btn" onClick={() => navigate('/service/cb-tuning')}>Learn More</Button>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
     </Container>
   );
 };

@@ -31,7 +31,7 @@ const Footer = () => {
             <h6>Contact us</h6>
             <div className="contact-row">
               <span>Email</span>
-              <span>            pcyco@cycleco.ca</span>
+              <span>pcyco@cycleco.ca</span>
             </div>
             <div className="contact-row">
               <span>Phone Number</span>

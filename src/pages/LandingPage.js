@@ -1,5 +1,6 @@
 import React from 'react';
-import { Container, Row, Col, Button, Card } from 'react-bootstrap';
+import { useState } from 'react';
+import { Container, Row, Col, Button, Card, Modal } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import './LandingPage.css';
 
@@ -8,6 +9,46 @@ const LandingPage = () => {
 
   const goToServices = () => {
     navigate('/services');
+  };
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const [showPopup, setShowPopup] = useState(false);
+
+  const [formData, setFormData] = useState({
+      firstName: '',
+      lastName: '',
+      email: '',
+      message: '',
+    });
+  
+  const handleChange = (e) => {
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const { firstName, lastName, email, message } = formData;
+
+    if (!firstName || !lastName || !email || !message) {
+      alert("Please fill out all fields.");
+      return;
+    }
+
+    setShowPopup(true);
+    setTimeout(() => {
+      setShowPopup(false);
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        message: '',
+      });
+    }, 2500);
   };
 
   return (
@@ -28,7 +69,7 @@ const LandingPage = () => {
 
       <Row className="mb-5">
         <Col>
-          <img src="/images/bike repair.png" alt="Bike Tools" className="img-fluid rounded" />
+          <img src="/images/bike-repair.jpg" alt="Bike Tools" className="img-fluid rounded" />
         </Col>
       </Row>
 
@@ -37,31 +78,31 @@ const LandingPage = () => {
       <Row className="mb-5">
         <Col md={4}>
           <Card className="mb-3 service-card">
-            <Card.Img variant="top" src="/images/flat tire.png" />
+            <Card.Img variant="top" src="/images/flat-tire.jpg" />
             <Card.Body>
               <Card.Title>Flat Tire Repair</Card.Title>
               <Card.Text>Quick, hassle-free flat fixes to get you back on the road—while you wait!</Card.Text>
-              <Button className="browse_services-btn" onClick={goToServices}>Learn More</Button>
+              <Button className="browse_services-btn" onClick={() => navigate('/service/cb-tires')}>Learn More</Button>
             </Card.Body>
           </Card>
         </Col>
         <Col md={4}>
           <Card className="mb-3 service-card">
-            <Card.Img variant="top" src="/images/brake repair.png" />
+            <Card.Img variant="top" src="/images/brake-repair.jpg" />
             <Card.Body>
               <Card.Title>Brake Repair</Card.Title>
               <Card.Text>Precision brake adjustments and replacements to keep you safe and in control on every ride.</Card.Text>
-              <Button className="browse_services-btn" onClick={goToServices}>Learn More</Button>
+              <Button className="browse_services-btn" onClick={() => navigate('/service/cb-brakes')}>Learn More</Button>
             </Card.Body>
           </Card>
         </Col>
         <Col md={4}>
           <Card className="mb-3 service-card">
-            <Card.Img variant="top" src="/images/Tune ups.png" />
+            <Card.Img variant="top" src="/images/tire-replace.jpg" />
             <Card.Body>
-              <Card.Title>Tire Replacement</Card.Title>
+              <Card.Title>Full Tune-Ups</Card.Title>
               <Card.Text>Comprehensive bike tune-ups to boost performance and ensure a smoother, safer ride.</Card.Text>
-              <Button className="browse_services-btn" onClick={goToServices}>Learn More</Button>
+              <Button className="browse_services-btn" onClick={() => navigate('/service/cb-tuning')}>Learn More</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -87,7 +128,87 @@ const LandingPage = () => {
             </p>
 
             <div className="d-flex gap-3 mt-3">
-              <button className="browse_services-btn">Call us</button>
+              <button className="browse_services-btn" onClick={handleShow}>Contact us</button>
+                <Modal show={show} onHide={handleClose}>
+                  <Modal.Header closeButton>
+                    <Modal.Title>Feel free to ask any questions</Modal.Title>
+                  </Modal.Header>
+
+                  <Modal.Body>
+                    <form className="contact-form" onSubmit={handleSubmit}>
+                      <div className="row">
+                        <div className="col-md-6 mb-3">
+                          <label htmlFor="firstName" className="form-label">First name</label>
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="firstName"
+                            name="firstName"
+                            placeholder="Jane"
+                            value={formData.firstName}
+                            onChange={handleChange}
+                            required
+                          />
+                        </div>
+                        <div className="col-md-6 mb-3">
+                          <label htmlFor="lastName" className="form-label">Last name</label>
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="lastName"
+                            name="lastName"
+                            placeholder="Smitherton"
+                            value={formData.lastName}
+                            onChange={handleChange}
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <div className="mb-3">
+                        <label htmlFor="email" className="form-label">Email address</label>
+                        <input
+                          type="email"
+                          className="form-control"
+                          id="email"
+                          name="email"
+                          placeholder="email@janesfakedomain.net"
+                          value={formData.email}
+                          onChange={handleChange}
+                          required
+                        />
+                      </div>
+
+                      <div className="mb-3">
+                        <label htmlFor="message" className="form-label">Your message</label>
+                        <textarea
+                          className="form-control"
+                          id="message"
+                          name="message"
+                          rows="4"
+                          placeholder="Enter your question or message"
+                          value={formData.message}
+                          onChange={handleChange}
+                          required
+                        ></textarea>
+                      </div>
+
+                      <button type="submit" className="browse_services-btn" onClick={handleClose}>Submit</button>
+                    </form>
+
+                    {showPopup && (
+                      <div className="submission-popup mt-3">
+                        ✅ Your message was submitted!
+                      </div>
+                    )}
+                  </Modal.Body>
+
+                  <Modal.Footer>
+                    
+                  </Modal.Footer>
+                  
+                </Modal>
+
               <button
                 onClick={() => navigate('/locations')}
                 className="browse_services-btn"
@@ -103,17 +224,25 @@ const LandingPage = () => {
           <img src="/images/Ottawa map.png" alt="Map" className="img-fluid rounded map-image" />
         </Col>
       </Row>
+      <Row>
+        <Col>
+          <h2 className="mt-5 mb-3">We Offer E-Bike Support As Well</h2>
+        </Col>
 
-      <h2 className="mt-5 mb-3">We Offer E-Bike Support As Well</h2>
+        <Col className="justify-content-center mt-5 mb-3">
+          <div className="d-flex justify-content-between justify-content-center align-items-center">
+            <div></div>
+            <button className="browse_services-btn" onClick={() => navigate('/service-catalogue')}>E-Bike Service Catalogue</button>
+          </div>
+        </Col>
+      </Row>
+      
 
-      <div className="d-flex justify-content-between align-items-center mb-4">
-        <div></div>
-        <button className="browse_services-btn" onClick={goToServices}>E-Bike Service Catalogue</button>
-      </div>
+     
 
       <Row className="mb-5">
         <Col md={6}>
-          <img src="/images/battery replacement.png" alt="Battery Replacement" className="img-fluid rounded mb-3" />
+          <img src="/images/battery-replacement.jpg" alt="Battery Replacement" className="img-fluid rounded mb-3" />
           <h5><strong>Battery Replacements</strong></h5>
           <p>
             Keep your ride powered and reliable with our e-bike battery replacement service. We provide expert diagnostics, compatible battery sourcing, and safe installation to ensure optimal performance and range.
@@ -122,7 +251,7 @@ const LandingPage = () => {
         </Col>
 
         <Col md={6}>
-          <img src="/images/motor repairs.png " alt="Motor Repairs" className="img-fluid rounded mb-3" />
+          <img src="/images/ebike-motor-repair.png " alt="Motor Repairs" className="img-fluid rounded mb-3" />
           <h5><strong>Motor Repairs</strong></h5>
           <p>
             Restore your e-bike’s power and performance with our specialized motor repair service. From diagnostics to component replacements, our technicians handle hub and mid-drive motors with precision and care.
