@@ -12,7 +12,9 @@ function ServiceCatalogue(){
     <>
         <div class="service-hero-container">
             <img
+
                 src="./images/gear-repair.jpg"
+
                 alt="Service Banner"
                 className="hero-background-img"
             />
@@ -48,7 +50,9 @@ function ServiceCatalogue(){
                     <Row class = "cards-wrapper">
                         <Col>
                             <Card style={{ width: '18rem' }}>
+
                                 <Card.Img variant="top" src="./images/tuning.jpg" />
+
                                 <Card.Body>
                                     <Card.Title>Classic Tuning</Card.Title>
                                     <Card.Text>
@@ -65,7 +69,9 @@ function ServiceCatalogue(){
 
                         <Col>
                             <Card style={{ width: '18rem' }}>
+
                                 <Card.Img variant="top"  src="./images/gear-repair.jpg" />
+
                                 <Card.Body>
                                     <Card.Title>Drivetrain Services</Card.Title>
                                     <Card.Text>
@@ -84,7 +90,9 @@ function ServiceCatalogue(){
 
                         <Col>
                             <Card style={{ width: '18rem' }}>
+
                                 <Card.Img variant="top" src="./images/brake-repair.jpg" />
+
                                 <Card.Body>
                                     <Card.Title>Brake Services</Card.Title>
                                     <Card.Text>
@@ -106,7 +114,9 @@ function ServiceCatalogue(){
                     <Row class = "cards-wrapper">
                         <Col>
                             <Card style={{ width: '18rem' }}>
+
                                 <Card.Img variant="top" src="./images/tire-replace.jpg" />
+
                                 <Card.Body>
                                     <Card.Title>Wheel + Tire Care</Card.Title>
                                     <Card.Text>
@@ -123,7 +133,9 @@ function ServiceCatalogue(){
 
                         <Col>
                             <Card style={{ width: '18rem' }}>
+
                                 <Card.Img variant="top" src="./images/shifter-repair.jpg" />
+
                                 <Card.Body>
                                     <Card.Title>Gearshift Services</Card.Title>
                                     <Card.Text>
@@ -140,7 +152,9 @@ function ServiceCatalogue(){
 
                         <Col>
                             <Card style={{ width: '18rem' }}>
+
                                 <Card.Img variant="top" src="./images/gear-repair.jpg" />
+
                                 <Card.Body>
                                     <Card.Title>Headset + Suspension Services</Card.Title>
                                     <Card.Text>
@@ -168,7 +182,9 @@ function ServiceCatalogue(){
                     <Row class = "cards-wrapper">
                         <Col>
                             <Card style={{ width: '18rem' }}>
+
                                 <Card.Img variant="top" src="./images/ebike-diag.jpg" />
+
                                 <Card.Body>
                                     <Card.Title>E-Bike Diagnostics</Card.Title>
                                     <Card.Text>
@@ -185,7 +201,9 @@ function ServiceCatalogue(){
 
                         <Col>
                             <Card style={{ width: '18rem' }}>
+
                                 <Card.Img variant="top" src="./images/battery-replacement.jpg" />
+
                                 <Card.Body>
                                     <Card.Title>Battery & Charging</Card.Title>
                                     <Card.Text>
@@ -204,7 +222,9 @@ function ServiceCatalogue(){
 
                         <Col>
                             <Card style={{ width: '18rem' }}>
+
                                 <Card.Img variant="top" src="./images/ebike-motor-repair.png" />
+
                                 <Card.Body>
                                     <Card.Title>Electrical System Services</Card.Title>
                                     <Card.Text>
@@ -226,7 +246,9 @@ function ServiceCatalogue(){
                     <Row class = "cards-wrapper">
                         <Col>
                             <Card style={{ width: '18rem' }}>
+
                                 <Card.Img variant="top" src="./images/software.jpg" />
+
                                 <Card.Body>
                                     <Card.Title>Firmware/Software Services</Card.Title>
                                     <Card.Text>

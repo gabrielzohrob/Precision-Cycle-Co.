@@ -14,7 +14,9 @@ const AboutPage = () => {
       </p>
 
       <img
+
         src="./images/bike-repair.jpg"
+
         alt="Working on a bike"
         className="about-main-image mb-4"
       />
@@ -45,7 +47,9 @@ const AboutPage = () => {
       <Row className="mb-5">
               <Col md={4}>
                 <Card className="mb-3 service-card">
+
                   <Card.Img variant="top" src="./images/flat-tire.jpg" />
+
                   <Card.Body>
                     <Card.Title>Flat Tire Repair</Card.Title>
                     <Card.Text>Quick, hassle-free flat fixes to get you back on the road—while you wait!</Card.Text>
@@ -55,7 +59,9 @@ const AboutPage = () => {
               </Col>
               <Col md={4}>
                 <Card className="mb-3 service-card">
+
                   <Card.Img variant="top" src="./images/brake-repair.jpg" />
+
                   <Card.Body>
                     <Card.Title>Brake Repair</Card.Title>
                     <Card.Text>Precision brake adjustments and replacements to keep you safe and in control on every ride.</Card.Text>
@@ -65,8 +71,9 @@ const AboutPage = () => {
               </Col>
               <Col md={4}>
                 <Card className="mb-3 service-card">
+
                   <Card.Img variant="top" src="./images/tire-replace.jpg" />
-                  <Card.Body>
+     <Card.Body>
                     <Card.Title>Full Tune-Ups</Card.Title>
                     <Card.Text>Comprehensive bike tune-ups to boost performance and ensure a smoother, safer ride.</Card.Text>
                     <Button className="browse_services-btn" onClick={() => navigate('/service/cb-tuning')}>Learn More</Button>

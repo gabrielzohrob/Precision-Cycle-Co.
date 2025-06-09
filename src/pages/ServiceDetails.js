@@ -15,6 +15,7 @@ const ServiceDetails = () => {
   const currentService = params.serviceId;
 
   let serviceData = {
+
     "cb-tuning": ["Classic Bike Tuning", "50-80", './images/tuning.jpg', "A thorough tune-up service that restores your bike’s performance and extends its lifespan. This includes precise adjustments to brakes and gears, tire pressure optimization, chain lubrication, and bolt torque checks across the frame. We also inspect wear points like the drivetrain and cables, ensuring everything is operating smoothly. Ideal for seasonal maintenance or getting a neglected bike road-ready again."],
     "cb-drivetrain": ["Classic Bike Drivetrain Repair", "25-50", './images/gear-repair.jpg', "Focused on the heart of your bike’s pedaling system, this service addresses issues with the chain, cassette/freewheel, crankset, and bottom bracket. Whether you’re experiencing slipping gears, chain drops, or grinding sounds, we inspect, clean, and replace worn components to restore efficient power transfer. Essential for bikes that have seen heavy mileage or inconsistent shifting."],
     "cb-brakes": ["Classic Bike Brake Repair", "25-30", './images/brake-repair.jpg', "Safety starts with reliable brakes. This service includes brake pad inspection and replacement, cable or hose adjustment, and realignment of rim or disc calipers. If your stopping power feels weak or noisy, we’ll get your system properly balanced and responsive again—whether you use mechanical or hydraulic brakes."],
@@ -25,6 +26,7 @@ const ServiceDetails = () => {
     "eb-battery": ["Electric Bike Battery Repair", "60-120", './images/battery-replacement.jpg', "This service involves testing and restoring your battery’s performance. We evaluate voltage output, charge/discharge cycles, and physical integrity. If needed, we can replace battery cells, rewire terminals, or recommend OEM-compatible replacements. Ensures your ride doesn’t lose power prematurely or unexpectedly."],
     "eb-system": ["Electric Bike System Services", "45-80", './images/ebike-motor-repair.jpg', "We inspect and repair the motor, controller, torque sensors, and wiring harness. Whether it’s a hub-drive or mid-drive system, we ensure the electrical and mechanical integration is functioning correctly. Includes cleaning contacts, replacing damaged wiring, and correcting assist level inconsistencies."],
     "eb-software": ["Electric Bike Software Services", "30-100", './images/software.jpg', "This includes updating firmware, resetting error codes, customizing pedal assist levels, and performing brand-specific system diagnostics (e.g., Bosch, Shimano, Bafang). Many modern e-bikes rely on software for motor behavior and battery management, and we ensure yours is up-to-date and configured for your riding style."]
+
   };
 
   
