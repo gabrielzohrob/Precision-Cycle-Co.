@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import LandingPage from '../pages/LandingPage';
 import LocationPage from '../pages/LocationPage';
 import AboutPage from '../pages/AboutPage';
-import ServiceSelectionPage from './old/ServiceSelectionPage';
 import ServiceDetails from '../pages/ServiceDetails';
 import ServiceCatalogue from '../pages/ServiceCatalogue';
 
@@ -31,7 +30,7 @@ export default function Router(){
                         <Route path="/locations" element={<LocationPage />} />
                         <Route path="/about" element={<AboutPage />} />
                         <Route path="/service-catalogue" element={<ServiceCatalogue />} />
-                        <Route path="/service/:serviceName" element={<ServiceDetails />} />
+                        <Route path="/service/:serviceId" element={<ServiceDetails />} />
                     </Route>
                 </Routes>
             </BrowserRouter>
