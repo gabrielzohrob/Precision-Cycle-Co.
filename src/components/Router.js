@@ -23,7 +23,7 @@ export default function Router(){
     const BrowserRoutes = () => {
 
         return(
-            <HashRouter basename={"/Precision-Cycle-Co./"}>
+            <HashRouter>
                 <Routes>
                     <Route path="/" element={<Layout />}>
                         <Route path="/" element={<LandingPage />} />
