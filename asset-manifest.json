@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.3cf73197.css",
-    "main.js": "/static/js/main.0242a7c7.js",
-    "static/js/453.3ff3a958.chunk.js": "/static/js/453.3ff3a958.chunk.js",
-    "index.html": "/index.html",
-    "main.3cf73197.css.map": "/static/css/main.3cf73197.css.map",
-    "main.0242a7c7.js.map": "/static/js/main.0242a7c7.js.map",
-    "453.3ff3a958.chunk.js.map": "/static/js/453.3ff3a958.chunk.js.map"
+    "main.css": "/Precision-Cycle-Co./static/css/main.3cf73197.css",
+    "main.js": "/Precision-Cycle-Co./static/js/main.8c21eb66.js",
+    "static/js/453.3ff3a958.chunk.js": "/Precision-Cycle-Co./static/js/453.3ff3a958.chunk.js",
+    "index.html": "/Precision-Cycle-Co./index.html",
+    "main.3cf73197.css.map": "/Precision-Cycle-Co./static/css/main.3cf73197.css.map",
+    "main.8c21eb66.js.map": "/Precision-Cycle-Co./static/js/main.8c21eb66.js.map",
+    "453.3ff3a958.chunk.js.map": "/Precision-Cycle-Co./static/js/453.3ff3a958.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3cf73197.css",
-    "static/js/main.0242a7c7.js"
+    "static/js/main.8c21eb66.js"
   ]
 }
