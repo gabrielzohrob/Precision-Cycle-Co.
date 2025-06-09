@@ -11,7 +11,9 @@ const ServiceSelectionPage = () => {
       {/* Hero Section */}
       <div className="service-hero-container">
         <img
-          src="./Precision-Cycle-Co./images/bike repair.png"
+
+          src="./images/bike repair.png"
+
           alt="Service Banner"
           className="hero-background-img"
         />
@@ -46,7 +48,9 @@ const ServiceSelectionPage = () => {
           </Col>
           <Col md={6}>
             <img
-              src="./Precision-Cycle-Co./images/learn more about us.png"
+
+              src="./images/learn more about us.png"
+
               alt="Classic"
               className="img-fluid rounded service-img"
             />
@@ -56,7 +60,9 @@ const ServiceSelectionPage = () => {
         <Row className="align-items-center">
           <Col md={6}>
             <img
-              src="./Precision-Cycle-Co./images/battery replacement.png"
+
+              src="./images/battery replacement.png"
+
               alt="E-Bike"
               className="img-fluid rounded service-img"
             />
@@ -90,7 +96,9 @@ const ServiceSelectionPage = () => {
           {/* Full Bike Tuning */}
           <Col md={6}>
             <img
-              src="./Precision-Cycle-Co./images/tune ups.png"
+
+              src="./images/tune ups.png"
+
               alt="Full Bike Tuning"
               className="img-fluid rounded mb-2"
               style={{ width: '100%', height: '300px', objectFit: 'cover' }}
@@ -104,7 +112,9 @@ const ServiceSelectionPage = () => {
           <Col md={6} className="d-flex flex-column gap-4">
             <div>
               <img
-                src="./Precision-Cycle-Co./images/battery replacement.png"
+
+                src="./images/battery replacement.png"
+
                 alt="E-Bike Battery Replacement"
                 className="img-fluid rounded mb-2"
                 style={{ height: '140px', width: '100%', objectFit: 'cover' }}
@@ -116,7 +126,9 @@ const ServiceSelectionPage = () => {
 
             <div>
               <img
-                src="./Precision-Cycle-Co./images/flat tire.png"
+
+                src="./images/flat tire.png"
+
                 alt="Tire Replacement"
                 className="img-fluid rounded mb-2"
                 style={{ height: '140px', width: '100%', objectFit: 'cover' }}
