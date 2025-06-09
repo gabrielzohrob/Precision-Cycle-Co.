@@ -8,7 +8,7 @@ const LandingPage = () => {
   const navigate = useNavigate();
 
   const goToServices = () => {
-    navigate('/services');
+    navigate('/service-catalogue');
   };
 
   const [show, setShow] = useState(false);
