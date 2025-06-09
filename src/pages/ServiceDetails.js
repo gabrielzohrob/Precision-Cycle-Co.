@@ -8,8 +8,6 @@ import './ServiceDetails.css'; // Optional: style it as needed
 import { useParams } from 'react-router-dom';
 
 const ServiceDetails = () => {
-  const [selectedDate, setSelectedDate] = useState(new Date());
-
   const [selectedDateTime, setSelectedDateTime] = useState(setHours(setMinutes(new Date(), 30), 17));
 
   const params = useParams();

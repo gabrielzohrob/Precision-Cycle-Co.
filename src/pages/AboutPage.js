@@ -6,10 +6,6 @@ import './AboutPage.css';
 const AboutPage = () => {
   const navigate = useNavigate();
 
-  const goToServices = () => {
-    navigate('/services');
-  };
-
   return (
     <Container className="about-page mt-5 mb-5">
       <h1 className="mb-3">Learn More About Us!</h1>
