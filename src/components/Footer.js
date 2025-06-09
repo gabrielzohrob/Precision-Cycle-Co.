@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="footer-content container">
         {/* Left: Logo + Socials */}
         <div className="footer-left">
-          <img src="/images/logo-no-text.png" alt="Logo" className="footer-logo" />
+          <img src="./images/logo-no-text.png" alt="Logo" className="footer-logo" />
           <div className="social-icons">
             <i className="fab fa-facebook-f"></i>
             <i className="fab fa-linkedin-in"></i>

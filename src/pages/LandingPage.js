@@ -69,7 +69,7 @@ const LandingPage = () => {
 
       <Row className="mb-5">
         <Col>
-          <img src="/images/bike-repair.jpg" alt="Bike Tools" className="img-fluid rounded" />
+          <img src="./images/bike-repair.jpg" alt="Bike Tools" className="img-fluid rounded" />
         </Col>
       </Row>
 
@@ -78,7 +78,7 @@ const LandingPage = () => {
       <Row className="mb-5">
         <Col md={4}>
           <Card className="mb-3 service-card">
-            <Card.Img variant="top" src="/images/flat-tire.jpg" />
+            <Card.Img variant="top" src="./images/flat-tire.jpg" />
             <Card.Body>
               <Card.Title>Flat Tire Repair</Card.Title>
               <Card.Text>Quick, hassle-free flat fixes to get you back on the road—while you wait!</Card.Text>
@@ -88,7 +88,7 @@ const LandingPage = () => {
         </Col>
         <Col md={4}>
           <Card className="mb-3 service-card">
-            <Card.Img variant="top" src="/images/brake-repair.jpg" />
+            <Card.Img variant="top" src="./images/brake-repair.jpg" />
             <Card.Body>
               <Card.Title>Brake Repair</Card.Title>
               <Card.Text>Precision brake adjustments and replacements to keep you safe and in control on every ride.</Card.Text>
@@ -98,7 +98,7 @@ const LandingPage = () => {
         </Col>
         <Col md={4}>
           <Card className="mb-3 service-card">
-            <Card.Img variant="top" src="/images/tire-replace.jpg" />
+            <Card.Img variant="top" src="./images/tire-replace.jpg" />
             <Card.Body>
               <Card.Title>Full Tune-Ups</Card.Title>
               <Card.Text>Comprehensive bike tune-ups to boost performance and ensure a smoother, safer ride.</Card.Text>
@@ -221,7 +221,7 @@ const LandingPage = () => {
         </Col>
 
         <Col md={6} className="d-flex align-items-start">
-          <img src="/images/Ottawa map.png" alt="Map" className="img-fluid rounded map-image" />
+          <img src="./images/Ottawa map.png" alt="Map" className="img-fluid rounded map-image" />
         </Col>
       </Row>
       <Row>
@@ -242,7 +242,7 @@ const LandingPage = () => {
 
       <Row className="mb-5">
         <Col md={6}>
-          <img src="/images/battery-replacement.jpg" alt="Battery Replacement" className="img-fluid rounded mb-3" />
+          <img src="./images/battery-replacement.jpg" alt="Battery Replacement" className="img-fluid rounded mb-3" />
           <h5><strong>Battery Replacements</strong></h5>
           <p>
             Keep your ride powered and reliable with our e-bike battery replacement service. We provide expert diagnostics, compatible battery sourcing, and safe installation to ensure optimal performance and range.
@@ -251,7 +251,7 @@ const LandingPage = () => {
         </Col>
 
         <Col md={6}>
-          <img src="/images/ebike-motor-repair.png " alt="Motor Repairs" className="img-fluid rounded mb-3" />
+          <img src="./images/ebike-motor-repair.png " alt="Motor Repairs" className="img-fluid rounded mb-3" />
           <h5><strong>Motor Repairs</strong></h5>
           <p>
             Restore your e-bike’s power and performance with our specialized motor repair service. From diagnostics to component replacements, our technicians handle hub and mid-drive motors with precision and care.
