@@ -51,7 +51,7 @@ const NavigationBar = () => {
       <div className="nav-logo">
         <Link to="/" className="navbar-brand">
           <img
-            src="/images/logo.png"
+            src="./Precision-Cycle-Co./images/logo.png"
             alt="Precision Cycle Co."
             style={{ height: '40px' }}
           />
