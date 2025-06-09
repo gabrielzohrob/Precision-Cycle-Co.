@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Precision-Cycle-Co./static/css/main.3cf73197.css",
-    "main.js": "/Precision-Cycle-Co./static/js/main.617f0df4.js",
+    "main.js": "/Precision-Cycle-Co./static/js/main.b810fb3c.js",
     "static/js/453.3ff3a958.chunk.js": "/Precision-Cycle-Co./static/js/453.3ff3a958.chunk.js",
     "index.html": "/Precision-Cycle-Co./index.html",
     "main.3cf73197.css.map": "/Precision-Cycle-Co./static/css/main.3cf73197.css.map",
-    "main.617f0df4.js.map": "/Precision-Cycle-Co./static/js/main.617f0df4.js.map",
+    "main.b810fb3c.js.map": "/Precision-Cycle-Co./static/js/main.b810fb3c.js.map",
     "453.3ff3a958.chunk.js.map": "/Precision-Cycle-Co./static/js/453.3ff3a958.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3cf73197.css",
-    "static/js/main.617f0df4.js"
+    "static/js/main.b810fb3c.js"
   ]
 }
